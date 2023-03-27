@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.sellerworx</groupId>
+    <artifactId>consolidator</artifactId>
+    <version>1.9.320-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <properties>
+        <darby.core.version>1.11</darby.core.version>
+        <timestamp>${maven.build.timestamp}</timestamp>
+        <build.branch>none</build.branch>
+        <project.dependencyDir>${project.build.directory}/dependency</project.dependencyDir>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <the.project.version>${project.version}</the.project.version>
+        <darby.artifact>darby</darby.artifact>
+        <walmart.version>1.109</walmart.version>
+        <ttk.version>1.13</ttk.version>
+        <siam.version>1.68</siam.version>
+        <apollo.version>1.5</apollo.version><!--reverting back apollo version as client is not ready with their developement-->
+        <asics.version>1.10</asics.version>
+        <decima.version>1.33</decima.version>
+        <phindia.version>1.3</phindia.version>
+        <al_hokair.version>1.1</al_hokair.version>
+        <phbi.version>1.3</phbi.version>
+        <ajlan.version>1.5</ajlan.version>
+        <shimano.version>1.7</shimano.version>
+        <levis.version>1.2</levis.version>
+        <phsa.version>1.0</phsa.version>
+        <phuae.version>1.8</phuae.version>
+        <wecreate.version>1.0</wecreate.version>
+        <redtag.version>1.18</redtag.version>
+        <shardha.version>1.0</shardha.version>
+        <matalan.version>1.3</matalan.version>
+        <ncrksa.version>1.4</ncrksa.version>
+        <ges.version>1.3</ges.version>
+        <maven.build.timestamp.format>yyyyMMddHHmmss</maven.build.timestamp.format> <!-- Required for docker -->
+    </properties>
+
+    <parent>
+        <groupId>com.sellerworx</groupId>
+        <artifactId>merchant</artifactId>
+        <version>1.6</version>
+    </parent>
+    <!-- While adding a merchant, points to keep in mind: 1. Add dependency
+        for merchant jar. This will be deployed. 2. Add dependency for merchant test
+        jar. Keep version same as #1. 3. Add dependency in dependenciesToScan for
+        merchant artifact. 4. #2 & #3 are needed to execute test cases for all the
+        merchants at once. -->
+    <dependencies>
+        <dependency>
+            <groupId>com.sellerworx</groupId>
+            <artifactId>brickshop</artifactId>
+            <version>1.1</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sellerworx</groupId>
+            <artifactId>brickshop</artifactId>
+            <version>1.1</version>
+            <type>test-jar</type>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.sellerworx</groupId>
+            <artifactId>siam</artifactId>
+            <version>${siam.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sellerworx</groupId>
+            <artifactId>siam</artifactId>
+            <version>${siam.version}</version>
+            <type>test-jar</type>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.sellerworx</groupId>
+            <artifactId>phbi</artifactId>
+            <version>${phbi.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sellerworx</groupId>
+            <artifactId>phbi</artifactId>
+            <version>${phbi.version}</version>
+            <type>test-jar</type>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.sellerworx</groupId>
+            <artifactId>aramex</artifactId>
+            <version>1.3</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.sellerworx</groupId>
+            <artifactId>aramex</artifactId>
+            <version>1.3</version>
+            <type>test-jar</type>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.sellerworx</groupId>
+            <artifactId>ges</artifactId>
+            <version>${ges.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.sellerworx</groupId>
+            <artifactId>ges</artifactId>
+            <version>${ges.version}</version>
+            <type>test-jar</type>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.sellerworx</groupId>
+            <artifactId>walmart</artifactId>
+            <version>${walmart.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sellerworx</groupId>
+            <artifactId>walmart</artifactId>
+            <version>${walmart.version}</version>
+            <type>test-jar</type>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.sellerworx</groupId>
+            <artifactId>ttk</artifactId>
+            <version>${ttk.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sellerworx</groupId>
+            <artifactId>ttk</artifactId>
+            <version>${ttk.version}</version>
+            <type>test-jar</type>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.sellerworx</groupId>
+            <artifactId>decima</artifactId>
+            <version>${decima.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.sellerworx</groupId>
+            <artifactId>decima</artifactId>
+            <version>${decima.version}</version>
+            <type>test-jar</type>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.sellerworx</groupId>
+            <artifactId>levis</artifactId>
+            <version>${levis.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.sellerworx</groupId>
+            <artifactId>levis</artifactId>
+            <version>${levis.version}</version>
+            <type>test-jar</type>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.sellerworx</groupId>
+            <artifactId>phsa</artifactId>
+            <version>${phsa.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.sellerworx</groupId>
+            <artifactId>phsa</artifactId>
+            <version>${phsa.version}</version>
+            <type>test-jar</type>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.sellerworx</groupId>
+            <artifactId>redtag</artifactId>
+            <version>${redtag.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.sellerworx</groupId>
+            <artifactId>redtag</artifactId>
+            <version>${redtag.version}</version>
+            <type>test-jar</type>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.sellerworx</groupId>
+            <artifactId>ncrksa</artifactId>
+            <version>${ncrksa.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.sellerworx</groupId>
+            <artifactId>ncrksa</artifactId>
+            <version>${ncrksa.version}</version>
+            <type>test-jar</type>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.sellerworx</groupId>
+            <artifactId>aloha</artifactId>
+            <version>1.7</version>
+        </dependency>
+
+    <dependency>
+        <groupId>com.sellerworx</groupId>
+        <artifactId>aloha</artifactId>
+        <version>1.7</version>
+        <type>test-jar</type>
+        <scope>test</scope>
+    </dependency>
+
+	 <dependency>
+		<groupId>com.sellerworx</groupId>
+		<artifactId>asics</artifactId>
+		<version>${asics.version}</version>
+	</dependency>
+
+    <dependency>
+        <groupId>com.sellerworx</groupId>
+        <artifactId>asics</artifactId>
+	<version>${asics.version}</version>
+        <type>test-jar</type>
+        <scope>test</scope>
+    </dependency>
+
+
+    <dependency>
+        <groupId>com.sellerworx</groupId>
+        <artifactId>apollo</artifactId>
+        <version>${apollo.version}</version>
+    </dependency>
+    <dependency>
+        <groupId>com.sellerworx</groupId>
+        <artifactId>apollo</artifactId>
+        <version>${apollo.version}</version>
+        <type>test-jar</type>
+        <scope>test</scope>
+    </dependency>
+
+    	<dependency>
+            <groupId>com.sellerworx</groupId>
+            <artifactId>shimano</artifactId>
+            <version>${shimano.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.sellerworx</groupId>
+            <artifactId>shimano</artifactId>
+            <version>${shimano.version}</version>
+            <type>test-jar</type>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.sellerworx</groupId>
+            <artifactId>phindia</artifactId>
+            <version>${phindia.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sellerworx</groupId>
+            <artifactId>phindia</artifactId>
+            <version>${phindia.version}</version>
+            <type>test-jar</type>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.sellerworx</groupId>
+            <artifactId>ajlan</artifactId>
+            <version>${ajlan.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sellerworx</groupId>
+            <artifactId>ajlan</artifactId>
+            <version>${ajlan.version}</version>
+            <type>test-jar</type>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.sellerworx</groupId>
+            <artifactId>al_hokair</artifactId>
+            <version>${al_hokair.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sellerworx</groupId>
+            <artifactId>al_hokair</artifactId>
+            <version>${al_hokair.version}</version>
+            <type>test-jar</type>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.sellerworx</groupId>
+            <artifactId>phuae</artifactId>
+            <version>${phuae.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.sellerworx</groupId>
+            <artifactId>phuae</artifactId>
+            <version>${phuae.version}</version>
+            <type>test-jar</type>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.sellerworx</groupId>
+            <artifactId>wecreate</artifactId>
+            <version>${wecreate.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.sellerworx</groupId>
+            <artifactId>wecreate</artifactId>
+            <version>${wecreate.version}</version>
+            <type>test-jar</type>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.sellerworx</groupId>
+            <artifactId>shardha</artifactId>
+            <version>${shardha.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.sellerworx</groupId>
+            <artifactId>shardha</artifactId>
+            <version>${shardha.version}</version>
+            <type>test-jar</type>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.sellerworx</groupId>
+            <artifactId>matalan</artifactId>
+            <version>${matalan.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.sellerworx</groupId>
+            <artifactId>matalan</artifactId>
+            <version>${matalan.version}</version>
+            <type>test-jar</type>
+            <scope>test</scope>
+        </dependency>
+
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <configuration>
+                    <descriptorRefs>
+                        <descriptorRef>jar-with-dependencies</descriptorRef>
+                    </descriptorRefs>
+                </configuration>
+            </plugin>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.3</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <version>2.3</version>
+                <executions>
+                    <execution>
+                        <id>copy-dependencies</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>copy-dependencies</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>${project.dependencyDir}
+                            </outputDirectory>
+                            <includeScope>runtime</includeScope>
+                            <excludeScope>provided</excludeScope>
+                            <excludeTypes>pom</excludeTypes>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>build-helper-maven-plugin</artifactId>
+                <version>1.0</version>
+                <executions>
+                    <execution>
+                        <id>add-source</id>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>add-source</goal>
+                        </goals>
+                        <configuration>
+                            <sources>
+                                <source>
+                                    src/main/generated
+                                </source>
+                            </sources>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>2.4.3</version>
+                <executions>
+                    <execution>
+                        <id>copy-debian-resources</id>
+                        <!-- here the phase you need -->
+                        <phase>validate</phase>
+                        <goals>
+                            <goal>copy-resources</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>${basedir}/target/generated-debian</outputDirectory>
+                            <resources>
+                                <resource>
+                                    <directory>deploy</directory>
+                                    <filtering>true</filtering>
+                                </resource>
+                            </resources>
+                            <delimiters>
+                                <delimiter>@{*}</delimiter>
+                            </delimiters>
+                            <useDefaultDelimiters>false</useDefaultDelimiters>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+        <extensions>
+            <extension>
+                <groupId>org.apache.maven.wagon</groupId>
+                <artifactId>wagon-ssh</artifactId>
+                <version>2.9</version>
+            </extension>
+        </extensions>
+    </build>
+
+    <profiles>
+
+        <profile>
+            <id>allTests</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-surefire-plugin</artifactId>
+                        <version>2.21.0</version>
+                        <configuration>
+                            <dependenciesToScan>
+                                <dependency>com.sellerworx:brickshop</dependency>
+                                <dependency>com.sellerworx:siam</dependency>
+                                <dependency>com.sellerworx:walmart</dependency>
+                                <dependency>com.sellerworx:ttk</dependency>
+                                <dependency>com.sellerworx:decima</dependency>
+                                <dependency>com.sellerworx:ncrksa</dependency>
+                                <dependency>com.sellerworx:aloha</dependency>
+                                <dependency>com.sellerworx:asics</dependency>
+                                <dependency>com.sellerworx:shimano</dependency>
+                                <dependency>com.sellerworx:al_hokair</dependency>
+                                <dependency>com.sellerworx:ajlan</dependency>
+                                <dependency>com.sellerworx:phsa</dependency>
+                                <dependency>com.sellerworx:levis</dependency>
+                                <dependency>com.sellerworx:phindia</dependency>
+                                <dependency>com.sellerworx:phbi</dependency>
+                                <dependency>com.sellerworx:ges</dependency>
+                                <dependency>com.sellerworx:redtag</dependency>
+                                <dependency>com.sellerworx:aramex</dependency>
+                                <dependency>com.sellerworx:apollo</dependency>
+                                <dependency>com.sellerworx:phuae</dependency>
+                                <dependency>com.sellerworx:wecreate</dependency>
+                                <dependency>com.sellerworx:shardha</dependency>
+                                <dependency>com.sellerworx:matalan</dependency>
+                            </dependenciesToScan>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+
+        <profile>
+            <id>docker-cibuild</id>
+            <activation>
+                <property>
+                    <name>env.ENV_BUILD</name>
+                    <value>true</value>
+                </property>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>io.fabric8</groupId>
+                        <artifactId>docker-maven-plugin</artifactId>
+                        <version>0.27.1</version>
+
+                        <configuration>
+                            <pushRegistry>486456986266.dkr.ecr.us-east-1.amazonaws.com</pushRegistry>
+                            <images>
+                                <image>
+                                    <name>capillary/darby:${project.version}-${maven.build.timestamp}</name>
+                                    <build>
+                                        <dockerFileDir>${basedir}</dockerFileDir>
+                                    </build>
+                                </image>
+                            </images>
+                        </configuration>
+
+                        <executions>
+                            <execution>
+                                <id>docker:build</id>
+                                <phase>package</phase>
+                                <goals>
+                                    <goal>build</goal>
+                                    <goal>push</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+
+        <profile>
+            <id>docker-cibuild-local</id>
+            <activation>
+                <property>
+                    <name>env.ENV_BUILD</name>
+                    <value>true</value>
+                </property>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>io.fabric8</groupId>
+                        <artifactId>docker-maven-plugin</artifactId>
+                        <version>0.27.1</version>
+                        <executions>
+                            <execution>
+                                <id>docker:build</id>
+                                <phase>package</phase>
+                                <goals>
+                                    <goal>build</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+    <!--SKIP END -->
+</project>

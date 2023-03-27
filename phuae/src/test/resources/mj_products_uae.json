@@ -1,0 +1,247 @@
+{
+  "messageCode": "1004",
+  "Message": "Successful",
+  "BundleItems": [
+    {
+      "ProductId": 8518519,
+      "VariantProductId": "73047",
+      "ProductSku": "UAE-Mts-GrldChkn",
+      "VariantSKU": "UAE-Mts-GrldChkn-Rglr-Sml",
+      "ProductTitle": "Grilled Chicken",
+      "ProductType": "A",
+      "MRP": 3.5,
+      "WebPrice": 3.5
+    },
+    {
+      "ProductId": 8518519,
+      "VariantProductId": "73039",
+      "ProductSku": "UAE-Mts-GrldChkn",
+      "VariantSKU": "UAE-Mts-GrldChkn-Rglr-Mdm",
+      "ProductTitle": "Grilled Chicken",
+      "ProductType": "A",
+      "MRP": 4.5,
+      "WebPrice": 4.5
+    },
+    {
+      "ProductId": 8518519,
+      "VariantProductId": "73031",
+      "ProductSku": "UAE-Mts-GrldChkn",
+      "VariantSKU": "UAE-Mts-GrldChkn-Rglr-Lrg",
+      "ProductTitle": "Grilled Chicken",
+      "ProductType": "A",
+      "MRP": 5.5,
+      "WebPrice": 5.5
+    },
+    {
+      "ProductId": 8518519,
+      "VariantProductId": "83563",
+      "ProductSku": "UAE-Mts-GrldChkn",
+      "VariantSKU": "UAE-Mts-GrldChkn-Rglr-Rglr",
+      "ProductTitle": "Grilled Chicken",
+      "ProductType": "A",
+      "MRP": 4.5,
+      "WebPrice": 4.5
+    },
+    {
+      "ProductId": 8518511,
+      "VariantProductId": "72991",
+      "ProductSku": "UAE-Vggs-MzrlChs",
+      "VariantSKU": "UAE-Vggs-MzrlChs-Rglr-Sml",
+      "ProductTitle": "Mozzarella",
+      "ProductType": "A",
+      "MRP": 3.5,
+      "WebPrice": 3.5
+    },
+    {
+      "ProductId": 8518511,
+      "VariantProductId": "72987",
+      "ProductSku": "UAE-Vggs-MzrlChs",
+      "VariantSKU": "UAE-Vggs-MzrlChs-Rglr-Mdm",
+      "ProductTitle": "Mozzarella",
+      "ProductType": "A",
+      "MRP": 4.5,
+      "WebPrice": 4.5
+    },
+    {
+      "ProductId": 8518511,
+      "VariantProductId": "72977",
+      "ProductSku": "UAE-Vggs-MzrlChs",
+      "VariantSKU": "UAE-Vggs-MzrlChs-Rglr-Lrg",
+      "ProductTitle": "Mozzarella",
+      "ProductType": "A",
+      "MRP": 5.5,
+      "WebPrice": 5.5
+    },
+    {
+      "ProductId": 8518511,
+      "VariantProductId": "83555",
+      "ProductSku": "UAE-Vggs-MzrlChs",
+      "VariantSKU": "UAE-Vggs-MzrlChs-Rglr-Rglr",
+      "ProductTitle": "Mozzarella",
+      "ProductType": "A",
+      "MRP": 4.5,
+      "WebPrice": 4.5
+    },
+    {
+      "ProductId": 8518501,
+      "VariantProductId": "72935",
+      "ProductSku": "UAE-Vggs-BlckOlvs",
+      "VariantSKU": "UAE-Vggs-BlckOlvs-Rglr-Sml",
+      "ProductTitle": "Black Olives",
+      "ProductType": "A",
+      "MRP": 3.5,
+      "WebPrice": 3.5
+    },
+    {
+      "ProductId": 8518501,
+      "VariantProductId": "72927",
+      "ProductSku": "UAE-Vggs-BlckOlvs",
+      "VariantSKU": "UAE-Vggs-BlckOlvs-Rglr-Mdm",
+      "ProductTitle": "Black Olives",
+      "ProductType": "A",
+      "MRP": 4.5,
+      "WebPrice": 4.5
+    },
+    {
+      "ProductId": 8518501,
+      "VariantProductId": "72923",
+      "ProductSku": "UAE-Vggs-BlckOlvs",
+      "VariantSKU": "UAE-Vggs-BlckOlvs-Rglr-Lrg",
+      "ProductTitle": "Black Olives",
+      "ProductType": "A",
+      "MRP": 5.5,
+      "WebPrice": 5.5
+    },
+    {
+      "ProductId": 8518501,
+      "VariantProductId": "83575",
+      "ProductSku": "UAE-Vggs-BlckOlvs",
+      "VariantSKU": "UAE-Vggs-BlckOlvs-Rglr-Rglr",
+      "ProductTitle": "Black Olives",
+      "ProductType": "A",
+      "MRP": 4.5,
+      "WebPrice": 4.5
+    },
+    {
+      "ProductId": 8518507,
+      "VariantProductId": "72979",
+      "ProductSku": "UAE-Vggs-Muhrms",
+      "VariantSKU": "UAE-Vggs-Muhrms-Rglr-Sml",
+      "ProductTitle": "Mushrooms",
+      "ProductType": "A",
+      "MRP": 3.5,
+      "WebPrice": 3.5
+    },
+    {
+      "ProductId": 8518507,
+      "VariantProductId": "72971",
+      "ProductSku": "UAE-Vggs-Muhrms",
+      "VariantSKU": "UAE-Vggs-Muhrms-Rglr-Mdm",
+      "ProductTitle": "Mushrooms",
+      "ProductType": "A",
+      "MRP": 4.5,
+      "WebPrice": 4.5
+    },
+    {
+      "ProductId": 8518507,
+      "VariantProductId": "72965",
+      "ProductSku": "UAE-Vggs-Muhrms",
+      "VariantSKU": "UAE-Vggs-Muhrms-Rglr-Lrg",
+      "ProductTitle": "Mushrooms",
+      "ProductType": "A",
+      "MRP": 5.5,
+      "WebPrice": 5.5
+    },
+    {
+      "ProductId": 8518507,
+      "VariantProductId": "83601",
+      "ProductSku": "UAE-Vggs-Muhrms",
+      "VariantSKU": "UAE-Vggs-Muhrms-Rglr-Rglr",
+      "ProductTitle": "Mushrooms",
+      "ProductType": "A",
+      "MRP": 4.5,
+      "WebPrice": 4.5
+    },
+    {
+      "ProductId": 8518509,
+      "VariantProductId": "72985",
+      "ProductSku": "UAE-Vggs-Onins",
+      "VariantSKU": "UAE-Vggs-Onins-Rglr-Sml",
+      "ProductTitle": "Onions",
+      "ProductType": "A",
+      "MRP": 3.5,
+      "WebPrice": 3.5
+    },
+    {
+      "ProductId": 8518509,
+      "VariantProductId": "72981",
+      "ProductSku": "UAE-Vggs-Onins",
+      "VariantSKU": "UAE-Vggs-Onins-Rglr-Mdm",
+      "ProductTitle": "Onions",
+      "ProductType": "A",
+      "MRP": 4.5,
+      "WebPrice": 4.5
+    },
+    {
+      "ProductId": 8518509,
+      "VariantProductId": "72973",
+      "ProductSku": "UAE-Vggs-Onins",
+      "VariantSKU": "UAE-Vggs-Onins-Rglr-Lrg",
+      "ProductTitle": "Onions",
+      "ProductType": "A",
+      "MRP": 5.5,
+      "WebPrice": 5.5
+    },
+    {
+      "ProductId": 8518509,
+      "VariantProductId": "83579",
+      "ProductSku": "UAE-Vggs-Onins",
+      "VariantSKU": "UAE-Vggs-Onins-Rglr-Rglr",
+      "ProductTitle": "Onions",
+      "ProductType": "A",
+      "MRP": 4.5,
+      "WebPrice": 4.5
+    },
+    {
+      "ProductId": 8518499,
+      "VariantProductId": "72945",
+      "ProductSku": "UAE-Vggs-GrnPprs",
+      "VariantSKU": "UAE-Vggs-GrnPprs-Rglr-Sml",
+      "ProductTitle": "Green Peppers",
+      "ProductType": "A",
+      "MRP": 3.5,
+      "WebPrice": 3.5
+    },
+    {
+      "ProductId": 8518499,
+      "VariantProductId": "72943",
+      "ProductSku": "UAE-Vggs-GrnPprs",
+      "VariantSKU": "UAE-Vggs-GrnPprs-Rglr-Mdm",
+      "ProductTitle": "Green Peppers",
+      "ProductType": "A",
+      "MRP": 4.5,
+      "WebPrice": 4.5
+    },
+    {
+      "ProductId": 8518499,
+      "VariantProductId": "72939",
+      "ProductSku": "UAE-Vggs-GrnPprs",
+      "VariantSKU": "UAE-Vggs-GrnPprs-Rglr-Lrg",
+      "ProductTitle": "Green Peppers",
+      "ProductType": "A",
+      "MRP": 5.5,
+      "WebPrice": 5.5
+    },
+    {
+      "ProductId": 8518499,
+      "VariantProductId": "83547",
+      "ProductSku": "UAE-Vggs-GrnPprs",
+      "VariantSKU": "UAE-Vggs-GrnPprs-Rglr-Rglr",
+      "ProductTitle": "Green Peppers",
+      "ProductType": "A",
+      "MRP": 4.5,
+      "WebPrice": 4.5
+    }
+  ],
+  "ErrorCode": 0
+}

@@ -1,0 +1,146 @@
+{
+    "www9": {
+        "queueCredential": {
+            "ip": "eu-intrmq.ecom.capillary.in",
+            "port": "5672",
+            "user": "admin",
+            "password": "admin"
+        },
+        "expectation": {
+            "host": "https://eu-expectationapi.ecom.capillary.in"
+        },
+        "host": "https://eu.ecom.capillary.in/DeveloperAPI",
+        "frontApiHost": "https://eu-frontapi.ecom.capillary.in"
+    },
+    "www3": {
+        "queueCredential": {
+            "ip": "eu-intrmq.ecom.capillary.in",
+            "port": "5672",
+            "user": "admin",
+            "password": "admin"
+        },
+        "expectation": {
+            "host": "https://eu-expectationapi.ecom.capillary.in/"
+        },
+        "host": "https://eu.ecom.capillary.in/DeveloperAPI",
+        "frontApiHost": "https://eu-frontapi.ecom.capillary.in"
+    },
+    "awsyum": {
+        "queueCredential": {
+            "ip": "eu-intrmq.ecom.capillary.in",
+            "port": "5672",
+            "user": "admin",
+            "password": "admin"
+        },
+        "expectation": {
+            "host": "https://eu-expectationapi.ecom.capillary.in/"
+        },
+        "host": "https://eu.ecom.capillary.in/DeveloperAPI",
+        "frontApiHost": "https://eu-frontapi.ecom.capillary.in"
+    },
+    "eu": {
+        "queueCredential": {
+            "ip": "eu-intrmq.ecom.capillary.in",
+            "port": "5672",
+            "user": "admin",
+            "password": "admin"
+        },
+        "expectation": {
+            "host": "https://eu-expectationapi.ecom.capillary.in"
+        },
+        "host": "https://eu.ecom.capillary.in/DeveloperAPI",
+        "frontApiHost": "https://eu-frontapi.ecom.capillary.in"
+    },
+    "www": {
+        "queueCredential": {
+            "ip": "sg-intrmq.ecom.capillary.in",
+            "port": "5672",
+            "user": "admin",
+            "password": "admin"
+        },
+        "expectation": {
+            "host": "https://sg-expectationapi.ecom.capillary.in/"
+        },
+        "host": "https://sg.ecom.capillary.in/DeveloperAPI",
+        "frontApiHost": "https://sg-frontapi.ecom.capillary.in"
+    },
+    "sg": {
+        "queueCredential": {
+            "ip": "sg-intrmq.ecom.capillary.in",
+            "port": "5672",
+            "user": "admin",
+            "password": "admin"
+        },
+        "expectation": {
+            "host": "https://sg-expectationapi.ecom.capillary.in/"
+        },
+        "host": "https://sg.ecom.capillary.in/DeveloperAPI",
+        "frontApiHost": "https://sg-frontapi.ecom.capillary.in"
+    },
+    "www2": {
+        "queueCredential": {
+            "ip": "mb-intrmq.ecom.capillary.in",
+            "port": "5672",
+            "user": "admin",
+            "password": "admin"
+        },
+        "expectation": {
+            "host": "https://mb-expectationapi.ecom.capillary.in"
+        },
+        "host": "https://mb.ecom.capillary.in/DeveloperAPI",
+        "frontApiHost": "https://mb-frontapi.ecom.capillary.in"
+    },
+    "mb": {
+        "queueCredential": {
+            "ip": "mb-intrmq.ecom.capillary.in",
+            "port": "5672",
+            "user": "admin",
+            "password": "admin"
+        },
+        "expectation": {
+            "host": "https://mb-expectationapi.ecom.capillary.in"
+        },
+        "host": "https://mb.ecom.capillary.in/DeveloperAPI",
+        "frontApiHost": "https://mb-frontapi.ecom.capillary.in"
+    },
+    "www8": {
+        "queueCredential": {
+            "ip": "10.12.6.13",
+            "port": "5672",
+            "user": "wmsvc",
+            "password": "Ddell@1234"
+        },
+        "expectation": {
+            "host": "http://10.12.6.84:9521/"
+        },
+        "host": "https://www8.martjack.com/DeveloperAPI",
+        "frontApiHost": "https://wm-frontapi.ecom.capillary.in"
+    },
+
+    "staging": {
+        "queueCredential": {
+            "ip": "52.76.121.210",
+            "port": "5672",
+            "user": "admin",
+            "password": "admin"
+        },
+        "expectation": {
+            "host": "https://staging-expectationapi.ecom.capillary.in"
+        },
+        "host": "https://staging.ecom.capillary.in/DeveloperAPI",
+        "frontApiHost": "https://staging-frontapi.ecom.capillary.in"
+    },
+    "nightly": {
+        "queueCredential": {
+            "ip": "nightly-intrmq.ecom.capillary.in",
+            "port": "5672",
+            "user": "admin",
+            "password": "admin"
+        },
+        "expectation": {
+            "host": "https://nightly-expectationapi.ecom.capillary.in"
+        },
+        "host": "http://nightly.ecom.capillary.in/DeveloperAPI",
+        "frontApiHost": "https://nightly-frontapi.ecom.capillary.in"
+    }
+}

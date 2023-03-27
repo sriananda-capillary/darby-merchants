@@ -1,0 +1,19 @@
+{
+  "Product": [
+    {
+      "MLPL_Code": "MLP1627",
+      "Closing_Stock": "100",
+      "Store_ID": "HYD"
+    },
+    {
+      "MLPL_Code": "MLP1631",
+      "Closing_Stock": "200",
+      "Store_ID": "HYD"
+    },
+    {
+      "MLPL_Code": "MLP1632",
+      "Closing_Stock": "300",
+      "Store_ID": "HYD"
+    }
+  ]
+}

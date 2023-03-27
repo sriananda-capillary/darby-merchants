@@ -1,0 +1,30 @@
+{
+  "buyerOrderResponseNumber": "PO01054955",
+  "sellerOrderResponseNumber": "10310573",
+  "orderResponseIssueDate": "2019-01-04",
+  "orderReferenceDate": "YYYY-MM-DD",
+  "buyerPartyAddress": {
+    "buyerPartName": "APOLLO HOSPITALS APOLLO",
+    "addressStreet": "APOLLO HOSPITALS,BANGALORE(A UNIT OF IMPERIAL HOSPITAL AND RESEARCH CENTER LTD.),GSTIN:29AABCI5313C1ZZ,154/11,OPP.IIM-B,BANNERGHATTA ROAD",
+    "addressLocation": "",
+    "addressArea": "ALI TOWERS,IV(FLOOR)|35 GREAMS ROAD|Chennai|Tamil Nadu|600006",
+    "city": "Chennai",
+    "state": "Tamil Nadu"
+  },
+  "orderDetails": [
+    {
+      "sku": "MLP1063",
+      "itemDescription": "Halyard E.T Tube Pead 5.0",
+      "acceptedQty": 10,
+      "orderedQty": 10,
+      "uom": ""
+    },
+    {
+      "sku": "MLP1083",
+      "itemDescription": "HANSRAJ TRACHEOSTOMY TUBE PLAIN 5.0 MM",
+      "uom": "",
+      "acceptedQty": 10,
+      "orderedQty": 10
+    }
+  ]
+}

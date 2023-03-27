@@ -1,0 +1,5 @@
+/etc/capillary/darby/application.properties
+/etc/capillary/darby/application-production.yml
+/etc/capillary/darby/config-per-pod.json
+/etc/capillary/darby/log4j2.xml
+/etc/capillary/darby/ehcache.xml

@@ -1,0 +1,30 @@
+{
+  "messageCode": "1004",
+  "Message": "Successful",
+  "VendorDetails": [
+    {
+      "MerchantId": "652fb962-8d31-4e10-8ce4-81a133ad566f",
+      "VendorId": "62c35c36-a7af-44ad-9c0e-994c88765cd2",
+      "VendorName": "Apollo",
+      "ContactPerson": "Cipla Test",
+      "Address": "",
+      "ZipCode": "",
+      "Country": "IN",
+      "State": "MH",
+      "City": "321",
+      "value": "",
+      "Mobile": "91-9999999999",
+      "Fax": "",
+      "Email": "mumbai@medsmartlogistics.com",
+      "Active": true,
+      "SupplierEmailConfiguration": false,
+      "IsDropShipping": false,
+      "OrderReturn": false,
+      "Availability": true,
+      "VendorReferenceCode": "Cipla1",
+      "RequestState": null,
+      "EnableEmailNotification": true
+    }
+  ],
+  "ErrorCode": 0
+}

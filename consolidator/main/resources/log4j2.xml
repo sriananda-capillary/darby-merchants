@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+    <Properties>
+        <Property name="log-path">${sys:LOG_PATH:-logs}</Property>
+        <Property name="log-level">${sys:LOG_LEVEL:-debug}</Property>
+        <Property name="log-appender">${sys:LOG_APPENDER:-Console}</Property>
+    </Properties>
+    <DynamicThresholdFilter key="DEBUG" defaultThreshold="DEBUG"
+                            onMatch="ACCEPT" onMismatch="NEUTRAL">
+    </DynamicThresholdFilter>
+    <Appenders>
+        <!-- File Appender -->
+        <RollingFile name="File" fileName="${log-path}/darby.log"
+                     filePattern="${log-path}/darby-%d{yyyy-MM-dd}-%i.log.gz">
+            <PatternLayout>
+                <pattern>[%-5level] %d{ISO8601} [%t] [%X] %logger{36} - %msg%n</pattern>
+            </PatternLayout>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+                <SizeBasedTriggeringPolicy size="250 MB"/>
+            </Policies>
+        </RollingFile>
+        <Console name="Console" target="SYSTEM_OUT">
+            <JSONLayout complete="false" compact="true" eventEol="true"  properties="true" locationInfo="true" />
+            <PatternLayout>
+                <pattern>[%-5level] %d{ISO8601} [%t] [%X] %logger{36} - %msg%n</pattern>
+            </PatternLayout>
+        </Console>
+    </Appenders>
+    <Loggers>
+        <Root level="INFO">
+            <AppenderRef ref="${log-appender}"/>
+        </Root>
+
+        <Logger name="com.sellerworx" level="${log-level}" additivity="false">
+            <AppenderRef ref="${log-appender}"/>
+        </Logger>
+
+        <Logger name="com.mj.client" level="${log-level}" additivity="false">
+            <AppenderRef ref="${log-appender}"/>
+        </Logger>
+
+        <Logger name="com.ncr.helpers" level="${log-level}" additivity="false">
+            <AppenderRef ref="${log-appender}"/>
+        </Logger>
+        <Logger name="org.apache.camel" level="INFO" additivity="false">
+            <AppenderRef ref="${log-appender}"/>
+        </Logger>
+        <Logger name="com.broker" level="${log-level}" additivity="false">
+            <AppenderRef ref="${log-appender}"/>
+        </Logger>
+    </Loggers>
+</Configuration>

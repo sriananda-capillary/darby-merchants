@@ -1,0 +1,30 @@
+{
+  "messageCode": "1004",
+  "Message": "Successful",
+  "VendorDetails": [
+    {
+      "MerchantId": "652fb962-8d31-4e10-8ce4-81a133ad566f",
+      "VendorId": "241a65ff-6765-4c26-9066-74c44e3b8c85",
+      "VendorName": "Cipla",
+      "ContactPerson": "Vizag test",
+      "Address": "",
+      "ZipCode": "",
+      "Country": "IN",
+      "State": "AP",
+      "City": "544",
+      "value": "",
+      "Mobile": "91-9137655483",
+      "Fax": "",
+      "Email": "vizag@medsmartlogistics.com",
+      "Active": true,
+      "SupplierEmailConfiguration": false,
+      "IsDropShipping": false,
+      "OrderReturn": false,
+      "Availability": true,
+      "VendorReferenceCode": "Vizag1",
+      "RequestState": null,
+      "EnableEmailNotification": true
+    }
+  ],
+  "ErrorCode": 0
+}

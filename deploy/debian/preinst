@@ -1,0 +1,13 @@
+#!/bin/bash -e
+
+if ! getent passwd darby >/dev/null; then
+        adduser \
+          --system \
+          --disabled-login \
+          --ingroup sdiscovery \
+          --no-create-home \
+          --home /nonexistent \
+          --gecos "ESB - darby" \
+          --shell /bin/false \
+          darby  >/dev/null
+fi

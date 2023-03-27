@@ -1,0 +1,92 @@
+[
+  {
+    "buyerOrderResponseNumber": "123",
+    "sellerOrderResponseNumber": "10034649",
+    "invoiceNumber": "HYDSB-19-10883",
+    "deliveryNoteNumber": "1234567890",
+    "orderResponseIssueDate": "2020-03-03",
+    "shipmentNo": "1234567890",
+    "orderShippedDate": "2020-03-03",
+    "invoiceDate": "2020-03-04",
+    "netAmount": 1540.00,
+    "totalTax": 184.80,
+    "grossAmount": 1725.00,
+    "totalDiscountValue": 0,
+    "buyerPartyAddress": {
+      "buyerPartName": "Varuna Varshney",
+      "addressStreet": "Pili kothi, Aryasamaj road, Holigate",
+      "addressLocation": "1003120730",
+      "addressArea": "SANJAY BAZAR ARYA SAMAJ ROAD||Mathura|Uttar Pradesh|281001",
+      "city": "Mathura",
+      "state": "Uttar Pradesh"
+    },
+    "orderDetails": [
+      {
+        "sku": "abc-1",
+        "itemDescription": "Philips Beard Trimmer Model BT1210 15, 1N",
+        "quantityInvoiced": 100,
+        "uom": "",
+        "unitPriceValue": 30.80,
+        "taxPercentage": 24.00,
+        "taxAmount": 184.80,
+        "totalTaxAmount": 9240.00,
+        "discountPercentage": 0,
+        "discountValue": 0,
+        "totalAmount": 1540.00,
+        "mrp": 120
+      },
+      {
+        "sku": "abc-2",
+        "itemDescription": "Borosil Vision Glass Large , 6 N",
+        "quantityInvoiced": 50,
+        "uom": "",
+        "unitPriceValue": 30.80,
+        "taxPercentage": 24.00,
+        "taxAmount": 184.80,
+        "totalTaxAmount": 9240.00000,
+        "discountPercentage": 0,
+        "discountValue": 0,
+        "totalAmount": 1540.00,
+        "mrp": 120
+      }
+    ]
+  },
+  {
+    "buyerOrderResponseNumber": "123",
+    "sellerOrderResponseNumber": "10034649",
+    "invoiceNumber": "HYDSB-19-10884",
+    "deliveryNoteNumber": "SN002",
+    "orderResponseIssueDate": "2020-03-03",
+    "shipmentNo": "SN002",
+    "orderShippedDate": "2020-03-03",
+    "invoiceDate": "2020-03-03",
+    "netAmount": 1540.00,
+    "totalTax": 184.80,
+    "grossAmount": 1725.00,
+    "totalDiscountValue": 0,
+    "buyerPartyAddress": {
+      "buyerPartName": "Varuna Varshney",
+      "addressStreet": "Pili kothi, Aryasamaj road, Holigate",
+      "addressLocation": "1003120730",
+      "addressArea": "SANJAY BAZAR ARYA SAMAJ ROAD||Mathura|Uttar Pradesh|281001",
+      "city": "Mathura",
+      "state": "Uttar Pradesh"
+    },
+    "orderDetails": [
+      {
+        "sku": "abc-3",
+        "itemDescription": "Parker Roller Ball Refill Blue Ink Pen Medium Point, 1 N",
+        "quantityInvoiced": 50,
+        "uom": "",
+        "unitPriceValue": 30.80,
+        "taxPercentage": 24.00,
+        "taxAmount": 184.80,
+        "totalTaxAmount": 9240.00000,
+        "discountPercentage": 0,
+        "discountValue": 0,
+        "totalAmount": 1540.00,
+        "mrp": 120
+      }
+    ]
+  }
+]

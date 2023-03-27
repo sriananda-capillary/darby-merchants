@@ -1,0 +1,31 @@
+{
+  "Price": [
+    {
+      "MLPL_Code": "MLP1631",
+      "MRP": "25.00",
+      "Base_Sale_Price": "10.00",
+      "Institutional_Sale_Price": "10.50",
+      "Trade_Sale_Price": "14.00",
+      "Distributor_Sale_Price": "12.00",
+      "Store_ID": "HYD"
+    },
+    {
+      "MLPL_Code": "MLP1632",
+      "MRP": "25.00",
+      "Base_Sale_Price": "10.00",
+      "Institutional_Sale_Price": "10.50",
+      "Trade_Sale_Price": "14.00",
+      "Distributor_Sale_Price": "12.00",
+      "Store_ID": "HYD"
+    },
+    {
+      "MLPL_Code": "MLP1630",
+      "MRP": "25.00",
+      "Base_Sale_Price": "10.00",
+      "Institutional_Sale_Price": "10.50",
+      "Trade_Sale_Price": "14.00",
+      "Distributor_Sale_Price": "12.00",
+      "Store_ID": "HYD"
+    }
+  ]
+}

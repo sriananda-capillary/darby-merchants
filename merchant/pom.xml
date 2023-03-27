@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.sellerworx</groupId>
+    <artifactId>merchant</artifactId>
+    <!-- SNAPSHOT is not needed, as any change should go to all projects by default. Any backward-incompatible change can be addressed by incrementing the version -->
+    <version>1.7-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <properties>
+        <darby.core.version>1.9.129</darby.core.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    </properties>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>1.4.2.RELEASE</version>
+    </parent>
+    <scm>
+        <connection>scm:git:ssh://git@github.com/Capillary/darby_merchants.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com/Capillary/darby_merchants.git</developerConnection>
+        <url>https://github.com/Capillary/darby_merchants.git</url>
+        <tag>HEAD</tag>
+    </scm>
+    <distributionManagement>
+        <repository>
+            <uniqueVersion>true</uniqueVersion>
+            <id>capillarymavenrepo</id>
+            <name>Capillary Maven Release Repo</name>
+            <url>scp://reporead@mvnrepo.capillary.co.in/data/mvnro/releases</url>
+            <layout>default</layout>
+        </repository>
+        <snapshotRepository>
+            <uniqueVersion>true</uniqueVersion>
+            <id>capillarymavensnapshotrepo</id>
+            <name>Capillary Maven Snapshot Repo</name>
+            <url>scp://reporead@mvnrepo.capillary.co.in/data/mvnro/snapshots</url>
+            <layout>default</layout>
+        </snapshotRepository>
+    </distributionManagement>
+    <dependencies>
+        <dependency>
+            <groupId>com.sellerworx</groupId>
+            <artifactId>darby</artifactId>
+            <version>${darby.core.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20160810</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sellerworx</groupId>
+            <artifactId>darby</artifactId>
+            <version>${darby.core.version}</version>
+            <classifier>tests</classifier>
+            <type>test-jar</type>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.powermock</groupId>
+            <artifactId>powermock-api-mockito</artifactId>
+            <version>1.6.4</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <scope>compile</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.jayway.jsonpath</groupId>
+            <artifactId>json-path</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.powermock</groupId>
+            <artifactId>powermock-module-junit4</artifactId>
+            <version>1.6.4</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.interceptor</groupId>
+            <artifactId>javax.interceptor-api</artifactId>
+            <version>1.2</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/xmlunit/xmlunit -->
+        <dependency>
+            <groupId>xmlunit</groupId>
+            <artifactId>xmlunit</artifactId>
+            <version>1.6</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.3</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.1.0</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>test-jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>2.4.2</version>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.apache.maven.scm</groupId>
+                        <artifactId>maven-scm-provider-gitexe</artifactId>
+                        <version>1.8.1</version>
+                    </dependency>
+                </dependencies>
+                <configuration>
+                    <tagNameFormat>${project.artifactId}-${project.version}</tagNameFormat>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.12.4</version>
+                <configuration>
+                    <argLine>-Dspring.profiles.active=development</argLine>
+                </configuration>
+            </plugin>
+
+
+            <plugin>
+                <groupId>io.ultreia.java4all.jgitflow</groupId>
+                <artifactId>jgitflow-maven-plugin</artifactId>
+                <version>1.0.0-rc-1</version>
+                <dependencies>
+                    <dependency>
+                        <groupId>com.jcraft</groupId>
+                        <artifactId>jsch</artifactId>
+                        <version>0.1.54</version>
+                    </dependency>
+                </dependencies>
+                <configuration>
+                    <allowSnapshots>true</allowSnapshots>
+                    <allowUntracked>false</allowUntracked>
+                    <enableFeatureVersions>false</enableFeatureVersions>
+                    <enableSshAgent>false</enableSshAgent>
+                    <pushReleases>true</pushReleases>
+                    <pushHotfixes>true</pushHotfixes>
+                    <pullDevelop>true</pullDevelop>
+                    <pullMaster>true</pullMaster>
+                    <scmCommentPrefix>Gitflow - </scmCommentPrefix>
+                    <noDeploy>false</noDeploy>
+                    <useReleaseProfile>false</useReleaseProfile>
+                    <flowInitContext>
+                        <masterBranchName>production</masterBranchName>
+                        <developBranchName>master</developBranchName>
+                        <featureBranchPrefix>feature/</featureBranchPrefix>
+                        <releaseBranchPrefix>release/</releaseBranchPrefix>
+                        <hotfixBranchPrefix>hotfix/</hotfixBranchPrefix>
+                        <versionTagPrefix>${project.artifactId}-v</versionTagPrefix>
+                    </flowInitContext>
+                </configuration>
+            </plugin>
+        </plugins>
+        <extensions>
+            <extension>
+                <groupId>org.apache.maven.wagon</groupId>
+                <artifactId>wagon-ssh</artifactId>
+                <version>2.9</version>
+            </extension>
+        </extensions>
+    </build>
+    <profiles>
+        <profile>
+            <id>commitinfo</id>
+            <activation>
+                <property>
+                    <name>env.ENV_BUILD</name>
+                    <value>true</value>
+                </property>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-antrun-plugin</artifactId>
+                        <version>1.8</version>
+                        <executions>
+                            <execution>
+                                <id>config-file</id>
+                                <phase>prepare-package</phase>
+                                <goals>
+                                    <goal>run</goal>
+                                </goals>
+                                <configuration>
+                                    <target>
+                                        <echo file="target/commitinfo.sh" append="false">
+#!/usr/bin/env bash
+DIR="target/classes/com/sellerworx/info/commit"
+mkdir -p $DIR
+echo "=========================================" &gt; $DIR/${project.artifactId}.txt
+echo "Last commit for module ${project.artifactId}" &gt;&gt; $DIR/${project.artifactId}.txt
+echo "=========================================" &gt;&gt; $DIR/${project.artifactId}.txt
+git log -1 &gt;&gt; $DIR/${project.artifactId}.txt
+echo "=========================================" &gt;&gt; $DIR/${project.artifactId}.txt
+                                        </echo>
+                                        <exec executable="sh">
+                                            <arg line="target/commitinfo.sh" />
+                                        </exec>
+                                    </target>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+</project>

@@ -1,0 +1,11 @@
+Package: @{darby.artifact}
+Version: [[version]]
+Section: misc
+Priority: optional
+Architecture: all
+Pre-Depends: common-utils-config, dirsprepare, oracle-jdk8u66
+Conflicts: darby-group
+Provides: darby-group
+Maintainer: Prashant Singla <prashant.singla@capillarytech.com>
+Description: ESB 
+Distribution: development

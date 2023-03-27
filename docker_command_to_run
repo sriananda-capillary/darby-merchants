@@ -1,0 +1,10 @@
+#To build
+#mvn clean package -Pdocker-cibuild-local -U
+
+#To Run
+docker run -i -t -p 8082:8081 -d -e DB_URL='jdbc:mysql://10.10.7.42/darby?useSSL=false&characterEncoding=UTF-8' -e DB_PASS='MaPb30cf7th' -e DB_USER='prashant' -e POD_NAME='nightly' -e DOCKER_HOST='graphite.host' -e RMQ_URL='host.docker.internal' -e RMQ_USER='guest' -e RMQ_PASS='guest' -e MONGO_URL='10.16.4.4' -e MONGO_USER='darby' -e MONGO_PASS='MbAnd0707' -e AZURE_NAMESPACE='martjack-poc' -e AZURE_RESOURCE_GROUP_NAME='martjack-poc' -e AZURE_DIRECTORY_ID='246229c9-1851-4ba4-88ae-4fe06fe3022c' -e AZURE_APPLICATION_ID='caef774e-6d1a-465b-bf5f-f84e8df9e47c' -e AZURE_APPLICATION_KEY='uuQTAjMn9DSV2R8uA8NPGDj9RJzt544wtCa++bSVVtw=' -e AZURE_SHARED_ACCESS_KEY_NAME='manage' -e TIME_TO_LIVE='1'  sellerworx/consolidator
+
+
+#To Run for Linux
+docker run -i -t -p 8082:8081 --net="host" -e DB_URL='jdbc:mysql://10.10.7.42/darby?useSSL=false&characterEncoding=UTF-8' -e DB_PASS='MaPb30cf7th' -e DB_USER='prashant' -e POD_NAME='nightly' -e DOCKER_HOST='graphite.host' -e RMQ_URL='host.docker.internal' -e RMQ_USER='guest' -e RMQ_PASS='guest' -e MONGO_URL='10.16.4.4' -e MONGO_USER='darby' -e MONGO_PASS='MbAnd0707' -e AZURE_NAMESPACE='martjack-poc' -e AZURE_RESOURCE_GROUP_NAME='martjack-poc' -e AZURE_DIRECTORY_ID='246229c9-1851-4ba4-88ae-4fe06fe3022c' -e AZURE_APPLICATION_ID='caef774e-6d1a-465b-bf5f-f84e8df9e47c' -e AZURE_APPLICATION_KEY='uuQTAjMn9DSV2R8uA8NPGDj9RJzt544wtCa++bSVVtw=' -e AZURE_SHARED_ACCESS_KEY_NAME='manage' -e TIME_TO_LIVE='1'  sellerworx/consolidator
+

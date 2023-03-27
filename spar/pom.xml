@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.capillary.landmark.spar</groupId>
+    <artifactId>spar</artifactId>
+    <version>1.12-SNAPSHOT</version>
+    <packaging>jar</packaging>
+    <parent>
+        <groupId>com.sellerworx</groupId>
+        <artifactId>merchant</artifactId>
+        <version>1.6</version>
+    </parent>
+    <properties>
+        <darby.core.version>1.30-SNAPSHOT</darby.core.version>
+        <java.version>1.8</java.version>
+    </properties>
+    <scm>
+        <connection>scm:git:ssh://git@github.com/Capillary/darby_merchants.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com/Capillary/darby_merchants.git</developerConnection>
+        <url>https://github.com/Capillary/darby_merchants.git</url>
+        <tag>HEAD</tag>
+    </scm>
+    <dependencies>
+        <!--=======================================================-->
+        <!--                       IMPORTANT                       -->
+        <!--=======================================================-->
+        <!-- If executing for the first time, then remove the parent and uncomment below dependency. -->
+        <!-- Execute mvn clean install and revert the changes. This will download the com.sellerworx:merchant artifacts. -->
+        <!-- This is a known defect for Private Maven Repository over scp -->
+        <!--=======================================================-->
+
+ <!--       <dependency>
+            <groupId>com.sellerworx</groupId>
+            <artifactId>merchant</artifactId>
+            <version>1.0</version>
+            <type>pom</type>
+        </dependency> -->
+    </dependencies>
+
+    <build>
+        <extensions>
+            <extension>
+                <groupId>org.apache.maven.wagon</groupId>
+                <artifactId>wagon-ssh</artifactId>
+                <version>3.0.0</version>
+            </extension>
+        </extensions>
+    </build>
+</project>

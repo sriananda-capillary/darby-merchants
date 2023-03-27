@@ -1,0 +1,30 @@
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="ehcache.xsd" updateCheck="true"
+         monitoring="autodetect" dynamicConfig="true">
+
+    <defaultCache name="default" maxElementsInMemory="100000"
+                  eternal="false" timeToIdleSeconds="300" timeToLiveSeconds="600"
+                  overflowToDisk="false" memoryStoreEvictionPolicy="LRU">
+        <persistence strategy="localTempSwap"/>
+    </defaultCache>
+
+    <cache name="ecom.product.defaultBundleItems"
+           maxElementsInMemory="10000" eternal="false" timeToIdleSeconds="300"
+           timeToLiveSeconds="3600" overflowToDisk="false"
+           memoryStoreEvictionPolicy="LRU"
+           copyOnRead="true"
+           copyOnWrite="true">
+        <persistence strategy="none"/>
+    </cache>
+
+    <cache name="ecom.product"
+           maxElementsInMemory="10000" eternal="false" timeToIdleSeconds="300"
+           timeToLiveSeconds="600" overflowToDisk="false"
+           memoryStoreEvictionPolicy="LRU"
+           copyOnRead="true"
+           copyOnWrite="true">
+        <persistence strategy="none"/>
+    </cache>
+
+
+</ehcache>

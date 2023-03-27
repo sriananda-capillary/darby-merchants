@@ -1,0 +1,54 @@
+{
+  "UserProfiles": [
+    {
+      "UserId": "e1125d5c-a07f-4aa5-aa98-816c3864a389",
+      "ProfileAttributeId": 1002,
+      "ProfileAttributeValueId": 0,
+      "ProfileAttributeName": "Membershipcard",
+      "ProfileAttributeValue": "MEMBER"
+    }
+  ],
+  "UserInfoId": "82790e97-41ce-4212-b7a0-4a62ed1d545b",
+  "UserId": "65ce470d-0083-44b9-bce7-b13149b5c877",
+  "MerchantId": "98d18d82-ba59-4957-9c92-3f89207a34f6",
+  "UserName": "test123@gmail.com",
+  "FirstName": "Anil",
+  "LastName": "Gowda",
+  "PostalAddress": "",
+  "AlternateEmail": "test123@gmail.com",
+  "City": "554",
+  "Pin": "",
+  "State": "SG1",
+  "Country": "SG",
+  "PhoneNo": "",
+  "Street": "",
+  "MobileNo": "91-9876543210",
+  "BirthDate": "1/1/1900",
+  "Gender": "M",
+  "Occupation": "",
+  "Industry": "",
+  "OtherArea": "",
+  "CountryName": "Singapore",
+  "StateName": "Jurong Island",
+  "CityName": "Other",
+  "AreaName": "",
+  "OtherCity": "",
+  "IsReceiveOffers": true,
+  "Password": null,
+  "ConfirmPassword": null,
+  "Countries": [
+    {
+      "CountryName": "Singapur",
+      "CountryCode": "SG",
+      "PhoneCode": "0065"
+    }
+  ],
+  "States": [
+    {
+      "StateName": "StateName",
+      "CountryCode": "SG",
+      "StateCode": "SN",
+      "USPSCode": "USPSCode"
+    }
+  ]
+}

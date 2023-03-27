@@ -1,0 +1,157 @@
+server:
+  port: 8081
+security:
+  basic:
+    enabled: false
+spring:
+  application:
+    name: DARBY_Production
+  datasource:
+    url: jdbc:mysql://host.docker.internal/darby?useSSL=false&characterEncoding=UTF-8&useLegacyDatetimeCode=false
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: root
+    tomcat:
+      max-active: 80
+      logAbandoned: true
+      removeAbandoned: true
+      removeAbandonedTimeout: 600
+      jdbcInterceptors: "org.apache.tomcat.jdbc.pool.interceptor.QueryTimeoutInterceptor(queryTimeout=600)"
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    hibernate.ddl-auto: validate
+    properties:
+      hibernate:
+        jdbc:
+          time_zone: UTC
+
+esb:
+  env:
+    type: test # change this value when you need a exclusice queue.
+    region: default_region
+  rabbitmq:
+    exchange:
+      name: dcn
+rabbitmq:
+    esb:
+      exchange:
+        name: esb-delayed
+      routing:
+        key: esb.cache.sync
+      instance:
+        host: host.docker.internal
+        port: 5672
+        username: guest
+        password: guest
+template:
+  mail:
+    locationSync: location-sync-result
+    addressSync: address-sync-report
+    decimaSubMenu: decima-submenu-template
+    decimaStoreIntegration: decima-store-template
+    decimaItems: decima-items-template
+    decimaOrderPush: decima-orderpush-template
+    decimaModifierGroup: decima-modifier-template
+azure:
+  namespace: null
+  resourceGroupName: null
+  directoryId: null
+  applicationId: null
+  applicationKey: null
+  sharedAccessKeyName: null
+  timeToLive: null
+retry:
+  limit:
+    micros-order-push: 2
+    decima:
+      order-push: 3
+      address-api: 3
+      customer-api: 3
+  initialInterval: 2000
+  multiplier: 1
+  maxInterval: 30000
+  maxAttempts: 3
+  azure.maxAttempts: 3
+scheduledTask:
+  sync:
+    ncr:
+      order:
+        status: 120000
+    mj:
+      product:
+        delay: 600000
+        task:
+          sleepDelay: 5000
+          sleepIteration: 15
+      order:
+        approved: 120000
+        all: 120000
+  dataImportTable:
+    ttl: 7
+alert:
+  mail:
+    fromId: no-reply@esb.capillarytechmailer.com
+    fromName: Darby Production
+    mjFromId: mj@capillarytech.com
+    mjFromName: Pizza Hut
+    smtp:
+      host: email-smtp.us-east-1.amazonaws.com
+      port: 587
+      auth: true
+      starttlsenable: true
+      username: AKIAJYJZX3HF6CFFVT2Q
+      password: AvIio6Qs2io3cXJg4zC1fN2C6z/rXizx+yAsCDqtGzWP
+    mj:
+      smtp:
+        host: smtp.sendgrid.net
+        port: 587
+        auth: true
+        starttlsenable: true
+        username: yumme
+        password: Dsystem@1234
+appAlertEmailAddress: esb@capillarytech.com
+expectationServiceBaseUrl: http://10.10.6.179:9521/
+storage.directory: /var/log/capillary/darby/storage/
+
+data:
+  mongodb:
+    database: darby
+    host: host.docker.internal
+    password: MbAnd0707
+    port: 27017
+    username: darby
+
+dataImportSource :
+  url: jdbc:mysql://host.docker.internal/inventory_import?useSSL=false&characterEncoding=UTF-8
+  username: root
+  password: root
+
+mock:
+  enable: false
+graphite:
+  host: carbon.ecom.capillary.in
+  port: 2003
+  period: 1
+
+spring.cache.type: ehcache
+spring.redis.host: localhost
+spring.redis.port: 6379
+
+esb.cache:
+  cacheConfigs:
+    - name: ecom.product
+      ttl: 600 #10 minutes
+    - name: ecom.product.defaultBundleItems
+      ttl: 900 #15 minutes
+
+spring.redis.jedis.pool:
+  max-active: 7
+  max-idle: 7
+  min-idle: 3
+  max-wait: 500 #in millis
+
+flock:
+  webhook: https://api.flock.com/hooks/sendMessage/0e07f2b9-ddd3-4297-9e96-5a2364e2adaa
+internalAPI:
+  username: darby@auth.com
+  password: darby@321!

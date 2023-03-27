@@ -1,0 +1,266 @@
+{
+   "messageCode": "1004",
+   "Message": "Successful",
+   "ErrorCode": "0",
+   "City": [
+      {
+         "CityId": "177",
+         "CityName": "Hanamankonda",
+         "StateCode": "TG",
+         "DefautPinCode": "506001"
+      },
+      {
+         "CityId": "195",
+         "CityName": "Hyderabad",
+         "StateCode": "TG",
+         "DefautPinCode": "500001"
+      },
+      {
+         "CityId": "241",
+         "CityName": "Karimnagar",
+         "StateCode": "TG",
+         "DefautPinCode": "505002"
+      },
+      {
+         "CityId": "250",
+         "CityName": "Khammam",
+         "StateCode": "TG",
+         "DefautPinCode": "507001"
+      },
+      {
+         "CityId": "263",
+         "CityName": "Kothagudem",
+         "StateCode": "TG",
+         "DefautPinCode": "507101"
+      },
+      {
+         "CityId": "307",
+         "CityName": "Mehboobnagar",
+         "StateCode": "TG",
+         "DefautPinCode": "509001"
+      },
+      {
+         "CityId": "339",
+         "CityName": "Nalgonda",
+         "StateCode": "TG",
+         "DefautPinCode": "508001"
+      },
+      {
+         "CityId": "547",
+         "CityName": "Warangal",
+         "StateCode": "TG",
+         "DefautPinCode": "506001"
+      },
+      {
+         "CityId": "16006",
+         "CityName": "Ranga reddy dist",
+         "StateCode": "TG",
+         "DefautPinCode": "500008"
+      },
+      {
+         "CityId": "17601",
+         "CityName": "Adilabad",
+         "StateCode": "TG",
+         "DefautPinCode": "504001"
+      },
+      {
+         "CityId": "17958",
+         "CityName": "Mahabub nagar",
+         "StateCode": "TG",
+         "DefautPinCode": "509001"
+      },
+      {
+         "CityId": "18483",
+         "CityName": "Medak",
+         "StateCode": "TG",
+         "DefautPinCode": "502001"
+      },
+      {
+         "CityId": "19075",
+         "CityName": "Karim nagar",
+         "StateCode": "TG",
+         "DefautPinCode": "505001"
+      },
+      {
+         "CityId": "19085",
+         "CityName": "Nizamabad",
+         "StateCode": "TG",
+         "DefautPinCode": "503001"
+      },
+      {
+         "CityId": "19835",
+         "CityName": "Bellampalle",
+         "StateCode": "TG",
+         "DefautPinCode": "504251"
+      },
+      {
+         "CityId": "19839",
+         "CityName": "Bodhan",
+         "StateCode": "TG",
+         "DefautPinCode": "503185"
+      },
+      {
+         "CityId": "19843",
+         "CityName": "Gadwal",
+         "StateCode": "TG",
+         "DefautPinCode": "509125"
+      },
+      {
+         "CityId": "19845",
+         "CityName": "Jadcherala",
+         "StateCode": "TG",
+         "DefautPinCode": "509301"
+      },
+      {
+         "CityId": "19847",
+         "CityName": "Jagtial",
+         "StateCode": "TG",
+         "DefautPinCode": "505327"
+      },
+      {
+         "CityId": "19849",
+         "CityName": "Jammikunta",
+         "StateCode": "TG",
+         "DefautPinCode": "505122"
+      },
+      {
+         "CityId": "19851",
+         "CityName": "Kaghaznagar",
+         "StateCode": "TG",
+         "DefautPinCode": "504296"
+      },
+      {
+         "CityId": "19853",
+         "CityName": "Kamareddy",
+         "StateCode": "TG",
+         "DefautPinCode": "503111"
+      },
+      {
+         "CityId": "19855",
+         "CityName": "Koratla",
+         "StateCode": "TG",
+         "DefautPinCode": "505326"
+      },
+      {
+         "CityId": "19857",
+         "CityName": "Mandamarri",
+         "StateCode": "TG",
+         "DefautPinCode": "504231"
+      },
+      {
+         "CityId": "19859",
+         "CityName": "Miryalguda",
+         "StateCode": "TG",
+         "DefautPinCode": "508207"
+      },
+      {
+         "CityId": "19861",
+         "CityName": "Nagarkurnool",
+         "StateCode": "TG",
+         "DefautPinCode": "509209"
+      },
+      {
+         "CityId": "19863",
+         "CityName": "Narsapur",
+         "StateCode": "TG",
+         "DefautPinCode": "534275"
+      },
+      {
+         "CityId": "19865",
+         "CityName": "Nirmal",
+         "StateCode": "TG",
+         "DefautPinCode": "504106"
+      },
+      {
+         "CityId": "19877",
+         "CityName": "Siddipet",
+         "StateCode": "TG",
+         "DefautPinCode": "502103"
+      },
+      {
+         "CityId": "19879",
+         "CityName": "Sirsilla",
+         "StateCode": "TG",
+         "DefautPinCode": "505301"
+      },
+      {
+         "CityId": "19881",
+         "CityName": "Suryapet",
+         "StateCode": "TG",
+         "DefautPinCode": "508213"
+      },
+      {
+         "CityId": "19883",
+         "CityName": "Wanaparthy",
+         "StateCode": "TG",
+         "DefautPinCode": "509103"
+      },
+      {
+         "CityId": "20163",
+         "CityName": "Mancherial",
+         "StateCode": "TG",
+         "DefautPinCode": "504208"
+      },
+      {
+         "CityId": "20189",
+         "CityName": "Godavarikhani",
+         "StateCode": "TG",
+         "DefautPinCode": "505209"
+      },
+      {
+         "CityId": "20263",
+         "CityName": "Isnapur",
+         "StateCode": "TG",
+         "DefautPinCode": "502307"
+      },
+      {
+         "CityId": "20269",
+         "CityName": "Kallur",
+         "StateCode": "TG",
+         "DefautPinCode": "518218"
+      },
+      {
+         "CityId": "20293",
+         "CityName": "Paloncha",
+         "StateCode": "TG",
+         "DefautPinCode": "507115"
+      },
+      {
+         "CityId": "20295",
+         "CityName": "Paloncha-1",
+         "StateCode": "TG",
+         "DefautPinCode": "507115"
+      },
+      {
+         "CityId": "20303",
+         "CityName": "Rangareddy",
+         "StateCode": "TG",
+         "DefautPinCode": "501101"
+      },
+      {
+         "CityId": "20305",
+         "CityName": "Sangareddy",
+         "StateCode": "TG",
+         "DefautPinCode": "502001"
+      },
+      {
+         "CityId": "20407",
+         "CityName": "Isnapur-1",
+         "StateCode": "TG",
+         "DefautPinCode": "502307"
+      },
+      {
+         "CityId": "20413",
+         "CityName": "Kallur-1",
+         "StateCode": "TG",
+         "DefautPinCode": "518218"
+      },
+      {
+         "CityId": "21052",
+         "CityName": "Secunderabad",
+         "StateCode": "TG",
+         "DefautPinCode": "500007"
+      }
+   ],
+   "AllocatedItems": "false"
+}

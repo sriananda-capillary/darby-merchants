@@ -1,0 +1,118 @@
+security:
+  basic:
+    enabled: false
+spring:
+  application:
+    name: Darby-DEV
+  datasource:
+    url: jdbc:h2:mem:~/test
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: null
+    tomcat:
+      max-active: 80
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate.ddl-auto: update
+
+azure:
+  namespace:
+  resourceGroupName:
+  directoryId:
+  applicationId:
+  applicationKey:
+  sharedAccessKeyName:
+  timeToLive: 7
+
+retry:
+  limit:
+    micros-order-push: 1
+  initialInterval: 1000
+  multiplier: 1
+  maxInterval: 3000
+  maxAttempts: 3
+  azure.maxAttempts: 3
+
+scheduledTask:
+  ftp:
+    delay: 120000
+  sync:
+    ncr:
+      order:
+        status: 120000
+    mj:
+      product:
+        delay: 120000
+        task:
+          sleepDelay: 5000
+          sleepIteration: 15
+      order:
+        approved: 120000
+        all: 120000
+  dataImportTable:
+     ttl: 7
+esb:
+  env:
+    region: default_test_region
+    type: test # change this value when you need a exclusice queue.
+  rabbitmq:
+    exchange:
+      name: dcn
+
+rabbitmq:
+    esb:
+      exchange:
+        name: exchange-name
+      routing:
+        key: route-name
+      instance:
+        host: null
+        port: null
+        username: null
+        password: null
+template:
+  mail:
+    locationSync: location-sync-result
+alert:
+  mail:
+    fromId: dev_test@sellerworx.com
+    fromName: Darby Dev
+    mjFromId: dev_test@sellerworx.com
+    mjFromName: Darby Dev
+    smtp:
+      host: email-smtp.us-west-2.amazonaws.com
+      port: 587
+      auth: true
+      starttlsenable: true
+      username: null
+      password: null
+    mj:
+      smtp:
+        host: smtp.sendgrid.net
+        port: 587
+        auth: true
+        starttlsenable: true
+        username: yumme
+        password: abc
+appAlertEmailAddress: null
+storage.directory: /tmp/
+
+dataImportSource :
+  url: jdbc:mysql://localhost/inventory_import?useSSL=false&characterEncoding=UTF-8
+  username: root
+  password: root
+
+spring.cache.type: ehcache
+
+flock:
+  webhook: https://api.flock.com/hooks/sendMessage/1bb79cfb-87f0-4531-bd0d-cb0493515797
+
+mock:
+  enable: false
+
+internalAPI:
+  username: darby@auth.com
+  password: darby@321!
+
+brokerService:
+  host: http://localhost:9091/
